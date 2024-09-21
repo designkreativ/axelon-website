@@ -1,0 +1,127 @@
+/*  BRAND GUILDLINE
+-----  PRIMARY      | 1B3E39
+-----  SECONDARY    | 
+-----  PRIMARY      |
+-----  GREY         | 696969
+
+
+
+
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+a {
+  color: black;
+  font-family: "Poppins", sans-serif;
+
+}
+
+.content_wraper {
+  max-width: 1440px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.layout_comp {
+  padding: 100px 0px;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+}
+.nav_items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav_wrapers {
+  display: flex;
+  align-items: center;
+}
+
+
+
+/* -------NAVBAR LINKS - Padding */
+.nav_links p {
+  padding: 0px 10px;
+}
+
+/* ------- NAVBUTTON - ---*/
+.nav_buttons a:nth-child(2) {
+  color: white;
+}
+
+/* ------- BUTTON COMPONENT ----- */
+.pri_btn {
+  padding: 25px 35px;
+  /* margin-left: 20px; */
+  border-radius: 80px;
+  background-color: #1b3e39;
+  color: white;
+}
+.nav_buttons a:nth-child(1) {
+  padding: 15px 25px;
+}
+
+/* ----------------   HEADER SECTION ----------  */
+
+.header_sec {
+  display: flex;
+}
+
+.header_info {
+  flex: 1;
+}
+.header_img {
+  flex: 1;
+}
+
+/* -----------HEADER INFO ---------- */
+.header_info p:nth-child(1) {
+  font-size:  1.3rem;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+}
+
+h1 {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 5.35rem;
+  line-height: 1.1;
+  color: #1b3e39;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+.header_para {
+  padding-bottom: 50px;
+  margin-right: 40px;
+  line-height: 2;
+  font-size: 1.2rem;
+
+}
+
+
+/* -----------HEADER IMG ---------- */
+.header_img {
+  width: 500px;
+  height: 500px;
+  background-color: aqua;
+}
