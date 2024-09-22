@@ -215,3 +215,92 @@ h2 {
   border-radius: 10px;
   background-color: #e7e7e7;
 }
+
+/* --------------- SECTION 3 ---------- */
+.sec_3_bg {
+  background-color: #1b3e39;
+  padding: 5vh 0px;
+  /* height: 40vh; */
+  width: 100%;
+  /* align-items: center; */
+}
+
+.sec_3 {
+  display: flex;
+}
+.sec_3_1,
+.sec_3_2 {
+  height: 20vh;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.sec_3_3 {
+  flex: 2;
+}
+
+.sec_3 h2,
+.sec_3 p,
+.sec_3 h3 {
+  color: white;
+}
+
+h3 {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 5.5rem;
+  line-height: 1.1;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+/* -------------- SECTION 4 ------------ */
+
+.sec_4 {
+  display: flex;
+}
+
+.sec_4_1,
+.sec_4_2 {
+  flex: 1;
+}
+
+.sec_4_1 h2 {
+  padding-right: 30%;
+}
+
+h4 {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 1.1;
+}
+
+.sec_card_1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sec_card_1,
+.sec_card_2 {
+  align-items: center;
+  padding: 5vh 0px;
+  border-bottom: solid 1px rgba(139, 139, 139, 0.274);
+}
+
+.sec_card_2_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5vh;
+}
+
+.sec_4 i {
+  font-size: 1.5rem;
+  color: #b6b6b66b;
+  font-weight: 400;
+}
