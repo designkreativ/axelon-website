@@ -23,7 +23,6 @@ p {
 a {
   color: black;
   font-family: "Poppins", sans-serif;
-
 }
 
 .content_wraper {
@@ -34,11 +33,11 @@ a {
 }
 
 .layout_comp {
-  padding: 100px 0px;
+  padding: 15vh 0px;
 }
 
 nav {
-  position: sticky;
+  /* position: sticky; */
   top: 0;
   overflow: hidden;
   background-color: rgb(255, 255, 255);
@@ -52,8 +51,6 @@ nav {
   display: flex;
   align-items: center;
 }
-
-
 
 /* -------NAVBAR LINKS - Padding */
 .nav_links p {
@@ -81,6 +78,7 @@ nav {
 
 .header_sec {
   display: flex;
+  padding-bottom: 30vh;
 }
 
 .header_info {
@@ -91,8 +89,8 @@ nav {
 }
 
 /* -----------HEADER INFO ---------- */
-.header_info p:nth-child(1) {
-  font-size:  1.3rem;
+.p_top {
+  font-size: 1.3rem;
   font-family: "DM Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
@@ -110,18 +108,110 @@ h1 {
   padding-bottom: 50px;
 }
 
-.header_para {
-  padding-bottom: 50px;
-  margin-right: 40px;
+.body_text {
   line-height: 2;
   font-size: 1.2rem;
-
+  color: #6c6c6c;
 }
 
+.body_text0 {
+  margin-right: 10%;
+  padding-bottom: 50px;
+}
 
 /* -----------HEADER IMG ---------- */
+
 .header_img {
-  width: 500px;
+  width: 300px;
   height: 500px;
-  background-color: aqua;
+  background-color: #e7e7e7;
+  border-radius: 10px;
+}
+
+/* ----------- SPONCER SECTION ----------- */
+.sponcer_border {
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(0, 0, 0, 0.199),
+    rgba(255, 255, 255, 0)
+  );
+  padding: 2px 0px;
+}
+.sponcer_borderline {
+  background-color: rgb(255, 255, 255);
+}
+.sponcer_sec {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0px;
+}
+.sponcer_img {
+}
+
+/* ---------------SECTION A ---------------- */
+.sec_1 {
+  text-align: center;
+}
+
+h2 {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 3.35rem;
+  line-height: 1.1;
+  color: #1b3e39;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+.sec_1_h2 {
+  margin: 0px 25%;
+}
+.body_text1 {
+  margin: 0px 20%;
+  padding-bottom: 50px;
+}
+
+/* ------ SEC 1 IMAGE--------- */
+.sec_1_img {
+  display: flex;
+}
+
+.sec_1_imgs_1,
+.sec_1_imgs_2 {
+  height: 60vh;
+  border-radius: 10px;
+  background-color: #e7e7e7;
+}
+.sec_1_imgs_1 {
+  flex: 1;
+  margin-right: 10px;
+}
+.sec_1_imgs_2 {
+  flex: 2;
+}
+
+/* --------- SEC 2 ------------ */
+
+.sec_2_cont {
+  display: flex;
+  align-items: center;
+}
+
+.sec_2_img {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sec_2_img_1,
+.sec_2_img_2,
+.sec_2_img_3 {
+  height: 60vh;
+  width: 32.8%;
+  /* flex: 1; */
+  padding-left: 10px;
+  border-radius: 10px;
+  background-color: #e7e7e7;
 }
