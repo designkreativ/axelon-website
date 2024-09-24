@@ -304,3 +304,63 @@ h4 {
   color: #b6b6b66b;
   font-weight: 400;
 }
+
+/* ------------ SECTION 5 --------- */
+.sec_5 {
+  background-color: #1b3e39;
+  /* height: 500px; */
+  display: flex;
+  align-items: center;
+}
+
+.sec_5_2 {
+  background-color: rgb(55, 73, 28);
+}
+
+.sec_5_1 {
+  flex: 2;
+  margin: 5vh 10vh;
+}
+
+.sec_5_2 {
+  flex: 1;
+  height: 40vh;
+}
+.sec_5_1 h2 {
+  color: white;
+}
+
+.sec_5_1 p {
+  color: #dfdfdf;
+}
+.sec_5_1 a {
+  background-color: white;
+  color: #1b3e39;
+  font-weight: 600;
+}
+
+.sec_5_1 p {
+  padding-bottom: 5vh;
+}
+
+/* ----------------- FOOTER ----------------- */
+footer {
+  background-color: rgb(178, 125, 180);
+  height: 40vh;
+}
+.ftr_1 {
+  display: flex;
+}
+.f_1 {
+  flex: 2;
+  background-color: rgb(76, 105, 76);
+}
+
+.f_2 {
+  flex: 1;
+  background-color: rgb(78, 76, 105);
+}
+
+.ftr_list {
+  display: flex;
+}
