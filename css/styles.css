@@ -4,10 +4,31 @@
 -----  PRIMARY      |
 -----  GREY         | 696969
 
+--- Secondary   
 
 
 
- */
+*/
+
+:root {
+  /* 
+  Primary | Brand
+
+  */
+  --primary-100: #ffffff;
+  --primary-98: #F5F9FE;
+  --primary-95: #E7F0FE;
+  --primary-90: #CFE1FC;
+  --primary-50: #0D69F2;
+  --primary-40: #0A54C2;
+  --primary-30: #0E418B;
+  --primary-20: #092B5D;
+  --primary-10: #05162E;
+
+
+
+
+}
 
 * {
   margin: 0;
@@ -16,17 +37,15 @@
   box-sizing: border-box;
 }
 
-p {
-  font-family: "Poppins", sans-serif;
+a, p {
+
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 1rem;
 }
-a {
-  color: black;
-  font-family: "Poppins", sans-serif;
-}
+
 
 .content_wraper {
-  max-width: 1440px;
+  max-width: 1240px;
   width: 85%;
   margin: 0 auto;
 }
@@ -44,35 +63,72 @@ nav {
 .nav_items {
   display: flex;
   justify-content: space-between;
-  padding: 10px 0;
+
+  /* padding: 10px 0; */
 }
 
 .nav_wrapers {
   display: flex;
+  padding: 10px 0px;
   align-items: center;
 }
 
 /* -------NAVBAR LINKS - Padding */
-.nav_links p {
-  padding: 0px 10px;
+.nav_buttons {
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
 }
 
 /* ------- NAVBUTTON - ---*/
-.nav_buttons a:nth-child(2) {
-  color: white;
+
+
+
+/* ------- BUTTON COMPONENTS ----- */
+
+
+
+
+.btn {
+  display: inline-flex; /* Ensures the button takes up space correctly */
+  align-items: center; /* Centers text vertically */
+  justify-content: center; /* Centers text horizontally */
+  padding: 20px 25px;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1rem;
+  border: none; /* Ensures no unwanted border differences */
+  border-radius: 80px;
+  /* height: 100%; Ensures consistency in height */
+  color: var(--primary-10);
 }
 
-/* ------- BUTTON COMPONENT ----- */
-.pri_btn {
-  padding: 25px 35px;
-  /* margin-left: 20px; */
-  border-radius: 80px;
-  background-color: #1b3e39;
-  color: white;
+
+.btn-primary {
+  background-color: var(--primary-40);
+  color: var(--primary-98);
+
+} 
+
+.btn-secondary {
+  border: 4px solid var(--primary-10);
+  color: var(--primary-10);
 }
-.nav_buttons a:nth-child(1) {
-  padding: 15px 25px;
+
+.btn:hover {
+  background-color: var(--primary-95);
+  color: var(--primary-40);
+  font-weight: 800;
+  /* border: 1px solid var(--primary-98); */
+  
 }
+
+.btn-ghost {
+  color: var(--primary-40);
+
+}
+
+
 
 /* ----------------   HEADER SECTION ----------  */
 
@@ -331,11 +387,11 @@ h4 {
 .sec_5_1 p {
   color: #dfdfdf;
 }
-.sec_5_1 a {
+/* .sec_5_1 a {
   background-color: white;
   color: #1b3e39;
   font-weight: 600;
-}
+} */
 
 .sec_5_1 p {
   padding-bottom: 10%;
@@ -403,3 +459,4 @@ footer {
 .ftr_2 a {
   padding-right: 20px;
 }
+
