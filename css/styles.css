@@ -19,9 +19,9 @@
   --primary-98: #f5f9fe;
   --primary-95: #e7f0fe;
   --primary-90: #cfe1fc;
-  --primary-80: #9EC3FA;
-  --primary-70: #6EA5F7;
-  --primary-60: #3D87F5;
+  --primary-80: #9ec3fa;
+  --primary-70: #6ea5f7;
+  --primary-60: #3d87f5;
   --primary-50: #0d69f2;
   --primary-40: #0a54c2;
   --primary-30: #0e418b;
@@ -46,7 +46,10 @@ body {
 }
 
 a,
-p {
+p,
+h3,
+h4,
+h5 {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 1rem;
 }
@@ -142,7 +145,6 @@ nav {
 
 /* -----------HEADER INFO ---------- */
 
-
 .text-header {
   font-family: supremell;
   /* font-optical-sizing: auto; */
@@ -170,7 +172,6 @@ nav {
 /* -----------HEADER IMG ---------- */
 
 .header_img {
-  
   /* height: 500px; */
   /* background-color: #e7e7e7; */
   /* border-radius: 10px; */
@@ -178,7 +179,6 @@ nav {
   /* margin-left: 50%; */
   box-sizing: unset;
 }
-
 
 /* ----------- SPONCER SECTION ----------- */
 .sponcer_border {
@@ -323,11 +323,12 @@ h3 {
 }
 
 h4 {
-  font-family: "DM Sans", sans-serif;
+  /* font-family: "DM Sans", sans-serif; */
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  color: var(--primary-10);
   line-height: 1.1;
 }
 
@@ -339,7 +340,7 @@ h4 {
 .sec_card_1,
 .sec_card_2 {
   align-items: center;
-  padding: 5vh 0px;
+  padding: 4vh 0px;
   border-bottom: solid 1px rgba(139, 139, 139, 0.274);
 }
 
@@ -352,13 +353,13 @@ h4 {
 
 .sec_4 i {
   font-size: 1.5rem;
-  color: var(--primary-80);
+  color: var(--primary-20);
   font-weight: 400;
 }
 
 /* ------------ SECTION 5 --------- */
 .sec_5 {
-  background-color: #1b3e39;
+  background-color: var(--primary-10);
   /* height: 500px; */
   display: flex;
   align-items: center;
