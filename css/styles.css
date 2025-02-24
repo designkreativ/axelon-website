@@ -125,7 +125,7 @@ nav {
   font-size: 1rem;
   border: none; /* Ensures no unwanted border differences */
   border-radius: 80px;
-  /* height: 100%; Ensures consistency in height */
+  height: 50px; /* Ensures consistency in height */
   color: var(--primary-10);
 }
 /* BTN HOVER STATE */
@@ -138,7 +138,6 @@ nav {
 .btn-primary {
   background-color: var(--primary-40);
   color: var(--primary-98);
-  box-sizing: unset;
 }
 .btn-primary:hover {
   background-color: var(--primary-30);
