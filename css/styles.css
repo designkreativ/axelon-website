@@ -1,18 +1,11 @@
 /*  BRAND GUILDLINE
------  PRIMARY      | 1B3E39
------  SECONDARY    | 
------  PRIMARY      |
------  GREY         | 696969
-
---- Secondary   
-
 
 
 */
 
 :root {
   /* 
-  Primary | Brand
+  Primary | Brand | Blue
 
   */
   --primary-100: #ffffff;
@@ -27,10 +20,29 @@
   --primary-30: #0e418b;
   --primary-20: #092b5d;
   --primary-10: #05162e;
+
 }
 
 @font-face {
-  font-family: supremell;
+  font-family: supreme-thin;
+  src: url("../fonts/Supremell/SupremeLL-Thin.otf");
+}
+@font-face {
+  font-family: supreme-light;
+  src: url("../fonts/Supremell/SupremeLL-Light.otf");
+}
+
+@font-face {
+  font-family: supreme-medium;
+  src: url("../fonts/Supremell/SupremeLL-Medium.otf");
+}
+@font-face {
+  font-family: supreme-regular;
+  src: url("../fonts/Supremell/SupremeLL-Regular.otf");
+}
+
+@font-face {
+  font-family: supreme-bold;
   src: url("../fonts/Supremell/SupremeLL-Bold.otf");
 }
 
@@ -61,7 +73,7 @@ h5 {
 }
 
 .layout_comp {
-  padding: 15vh 0px;
+  padding: 10vh 0px;
 }
 
 nav {
@@ -79,7 +91,7 @@ nav {
 
 .nav_wrapers {
   display: flex;
-  padding: 10px 0px;
+  padding: 10px 5px 0px 0px;
   align-items: center;
 }
 
@@ -94,11 +106,12 @@ nav {
 
 /* ------- BUTTON COMPONENTS ----- */
 
+/* DEFAULT BTN COMPONENT */
 .btn {
   display: inline-flex; /* Ensures the button takes up space correctly */
   align-items: center; /* Centers text vertically */
   justify-content: center; /* Centers text horizontally */
-  padding: 20px 25px;
+  padding: 15px 25px;
   font-weight: 600;
   font-style: normal;
   font-size: 1rem;
@@ -107,10 +120,23 @@ nav {
   /* height: 100%; Ensures consistency in height */
   color: var(--primary-10);
 }
+/* BTN HOVER STATE */
+.btn:hover {
+  background-color: var(--primary-95);
+  color: var(--primary-40);
+  font-weight: 800;
+}
+
 
 .btn-primary {
   background-color: var(--primary-40);
   color: var(--primary-98);
+  box-sizing: unset;
+}
+.btn-primary:hover {
+  background-color: var(--primary-30);
+  color: var(--primary-98);
+  
 }
 
 .btn-secondary {
@@ -118,11 +144,6 @@ nav {
   color: var(--primary-10);
 }
 
-.btn:hover {
-  background-color: var(--primary-95);
-  color: var(--primary-40);
-  font-weight: 800;
-}
 
 .btn-ghost {
   color: var(--primary-40);
@@ -132,7 +153,7 @@ nav {
 
 .header_sec {
   display: flex;
-  padding-bottom: 30vh;
+  padding-bottom: 10vh;
   /* background-color: skyblue; */
 }
 
@@ -146,7 +167,7 @@ nav {
 /* -----------HEADER INFO ---------- */
 
 .text-header {
-  font-family: supremell;
+  font-family: supreme-bold;
   /* font-optical-sizing: auto; */
   /* font-weight: 800; */
   /* font-style: normal; */
@@ -199,14 +220,14 @@ nav {
   padding: 50px 0px;
 }
 
-/* ---------------SECTION A ---------------- */
+/* ---------------SECTION 2 ---------------- */
 .sec_1 {
   text-align: center;
 }
 
 .text-h2 {
   /* font-family: "DM Sans", sans-serif; */
-  font-family: supremell;
+  font-family: supreme-bold;
   /* font-optical-sizing: auto; */
   /* font-weight: 800; */
   /* font-style: normal; */
@@ -222,6 +243,7 @@ nav {
 .body_text1 {
   margin: 0px 20%;
   padding-bottom: 50px;
+
 }
 
 /* ------ SEC 1 IMAGE--------- */
@@ -296,10 +318,11 @@ nav {
   color: white;
 }
 
-h3 {
-  font-family: "DM Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
+.text-h3 {
+  /* font-family: "DM Sans", sans-serif; */
+  /* font-optical-sizing: auto; */
+  /* font-weight: 300; */
+  font-family: supreme-light;
   font-style: normal;
   font-size: 5.5rem;
   line-height: 1.1;
@@ -322,6 +345,15 @@ h3 {
   padding-right: 30%;
 }
 
+.text-h5 {
+  /* font-family: "DM Sans", sans-serif; */
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.2rem;
+  color: var(--primary-70);
+  line-height: 1.1;
+}
 h4 {
   /* font-family: "DM Sans", sans-serif; */
   font-optical-sizing: auto;
@@ -399,10 +431,25 @@ h4 {
 footer {
   height: 450px;
   padding: 50px 0px;
+  background-color: var(--primary-10);
+}
+
+.footer_wraper {
+  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
+footer a, footer p {
+  color: var(--primary-98);
+  
+}
+footer h4 {
+  color: var(--primary-95);
+  
+}
+
 .ftr_1 {
   display: flex;
 }
@@ -418,18 +465,18 @@ footer {
 .ftr_list h4 {
   padding-bottom: 30px;
   font-size: 1.2rem;
+
 }
 .ftr_list li {
   padding-bottom: 15px;
 }
 .ftr_list a {
   font-size: 0.9rem;
-  color: #6c6c6ccc;
 }
 
 .f_2 {
   flex: 1;
-  margin: 0px 50px;
+  margin-right:50px;
 }
 .f_2_p {
   font-family: "DM Sans", sans-serif;
@@ -438,14 +485,13 @@ footer {
   font-style: normal;
   font-size: 0.9rem;
   line-height: 1.5;
-  color: #6c6c6ccc;
 }
 
 /* --------- BOTTOM LINKS --------- */
 .ftr_2 {
   display: flex;
   justify-content: space-between;
-  border-top: solid 1px rgba(0, 0, 0, 0.397);
+  border-top: solid 1px var(--primary-90);
   padding: 20px;
 }
 
