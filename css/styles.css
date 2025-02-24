@@ -21,6 +21,16 @@
   --primary-20: #092b5d;
   --primary-10: #05162e;
 
+  /* SHADES
+   */
+
+
+  --shades-90: #E1E5EA;
+  --shades-70: #A6B0BF;
+  --shades-50: #6B7C94;
+  --shades-30: #404A59;
+  --shades-10: #15191e;
+
 }
 
 @font-face {
@@ -91,7 +101,7 @@ nav {
 
 .nav_wrapers {
   display: flex;
-  padding: 10px 5px 0px 0px;
+  padding: 10px 0px 5px 0px;
   align-items: center;
 }
 
@@ -127,7 +137,6 @@ nav {
   font-weight: 800;
 }
 
-
 .btn-primary {
   background-color: var(--primary-40);
   color: var(--primary-98);
@@ -136,14 +145,12 @@ nav {
 .btn-primary:hover {
   background-color: var(--primary-30);
   color: var(--primary-98);
-  
 }
 
 .btn-secondary {
   border: 2px solid var(--primary-10);
   color: var(--primary-10);
 }
-
 
 .btn-ghost {
   color: var(--primary-40);
@@ -217,7 +224,8 @@ nav {
 .sponcer_sec {
   display: flex;
   justify-content: space-between;
-  padding: 50px 0px;
+  padding: 20px 0px;
+  align-items: center;
 }
 
 /* ---------------SECTION 2 ---------------- */
@@ -243,7 +251,6 @@ nav {
 .body_text1 {
   margin: 0px 20%;
   padding-bottom: 50px;
-
 }
 
 /* ------ SEC 1 IMAGE--------- */
@@ -429,25 +436,24 @@ h4 {
 
 /* ----------------- FOOTER ----------------- */
 footer {
-  height: 450px;
-  padding: 50px 0px;
+  /* height: 450px; */
+  padding: 50px 0px 10px 0px;
   background-color: var(--primary-10);
 }
 
 .footer_wraper {
-  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 5vh;
 }
 
-footer a, footer p {
-  color: var(--primary-98);
-  
+footer a,
+footer p {
+  color: var(--primary-90);
 }
 footer h4 {
-  color: var(--primary-95);
-  
+  color: var(--primary-98);
 }
 
 .ftr_1 {
@@ -465,7 +471,6 @@ footer h4 {
 .ftr_list h4 {
   padding-bottom: 30px;
   font-size: 1.2rem;
-
 }
 .ftr_list li {
   padding-bottom: 15px;
@@ -476,7 +481,8 @@ footer h4 {
 
 .f_2 {
   flex: 1;
-  margin-right:50px;
+  margin-right: 50px;
+  gap: 10px;
 }
 .f_2_p {
   font-family: "DM Sans", sans-serif;
@@ -485,13 +491,27 @@ footer h4 {
   font-style: normal;
   font-size: 0.9rem;
   line-height: 1.5;
+  padding-bottom: 3vh;
 }
+
+.footer-inputs{
+  background-color: var(--primary-10);
+  padding: 15px 25px;
+  color: var(--primary-90);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  border: 1px solid var(--primary-90);
+}
+
+.footer-input-1::placeholder {
+  color: var(--primary-90);
+}
+
 
 /* --------- BOTTOM LINKS --------- */
 .ftr_2 {
   display: flex;
   justify-content: space-between;
-  border-top: solid 1px var(--primary-90);
+  border-top: solid 1px var(--shades-30);
   padding: 20px;
 }
 
@@ -502,4 +522,8 @@ footer h4 {
 
 .ftr_2 a {
   padding-right: 20px;
+}
+
+.test {
+  justify-content: space-evenly;
 }
