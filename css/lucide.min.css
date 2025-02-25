@@ -1,0 +1,28 @@
+@font-face {
+  font-family: Lucide;
+  src: url(Lucide.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+[data-lucide] {
+  display: inline-block;
+  vertical-align: middle;
+}
+[data-lucide]:not([width]):not([height]) {
+  height: 1em;
+  width: 1em;
+}
+[data-lucide] {
+  stroke-width: 2;
+}
+[data-lucide] {
+  stroke: currentColor;
+  fill: none;
+}
+[data-lucide][fill="none"] {
+  fill: none;
+}
+[data-lucide][stroke="none"] {
+  stroke: none;
+}
