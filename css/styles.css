@@ -24,13 +24,11 @@
   /* SHADES
    */
 
-
-  --shades-90: #E1E5EA;
-  --shades-70: #A6B0BF;
-  --shades-50: #6B7C94;
-  --shades-30: #404A59;
+  --shades-90: #e1e5ea;
+  --shades-70: #a6b0bf;
+  --shades-50: #6b7c94;
+  --shades-30: #404a59;
   --shades-10: #15191e;
-
 }
 
 @font-face {
@@ -127,7 +125,7 @@ nav {
   font-size: 1rem;
   border: none; /* Ensures no unwanted border differences */
   border-radius: 80px;
-  /* height: 100%; Ensures consistency in height */
+  height: 50px; /* Ensures consistency in height */
   color: var(--primary-10);
 }
 /* BTN HOVER STATE */
@@ -140,7 +138,6 @@ nav {
 .btn-primary {
   background-color: var(--primary-40);
   color: var(--primary-98);
-  box-sizing: unset;
 }
 .btn-primary:hover {
   background-color: var(--primary-30);
@@ -494,7 +491,7 @@ footer h4 {
   padding-bottom: 3vh;
 }
 
-.footer-inputs{
+.footer-inputs {
   background-color: var(--primary-10);
   padding: 15px 25px;
   color: var(--primary-90);
@@ -505,7 +502,6 @@ footer h4 {
 .footer-input-1::placeholder {
   color: var(--primary-90);
 }
-
 
 /* --------- BOTTOM LINKS --------- */
 .ftr_2 {
