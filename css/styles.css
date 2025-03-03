@@ -87,7 +87,9 @@ h5 {
 nav {
   
   position: sticky;
-  top: 0;
+  z-index: 1;
+  
+  top: 15px;
   overflow: hidden;
   background-color: rgb(255, 255, 255);
 }
@@ -143,7 +145,7 @@ nav {
   min-width: 100px;
   color: var(--primary-10);
 }
-/* BTN HOVER STATE */
+/* BTN HOVER STATE        */
 .btn:hover {
   background-color: var(--primary-95);
   color: var(--primary-40);
@@ -212,12 +214,9 @@ nav {
 /* -----------HEADER IMG ---------- */
 
 .header_img {
-  /* height: 500px; */
-  /* background-color: #e7e7e7; */
-  /* border-radius: 10px; */
-  /* position: absolute; */
-  /* margin-left: 50%; */
   box-sizing: unset;
+  position: relative;
+  top: -50px;
 }
 
 /* ----------- SPONCER SECTION ----------- */
