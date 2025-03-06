@@ -21,7 +21,6 @@
   --primary-20: #092b5d;
   --primary-10: #05162e;
 
-
   --shades-90: #e1e5ea;
   --shades-70: #a6b0bf;
   --shades-50: #6b7c94;
@@ -81,7 +80,6 @@ h2 {
   padding-bottom: 30px;
 }
 
-
 .body-text {
   line-height: 1.8;
   font-size: clamp(0.6rem, 0.8rem + 1vw, 1.3rem); /* 1.3rem;  */
@@ -100,7 +98,6 @@ h2 {
 }
 
 nav {
-  
   position: sticky;
   z-index: 1;
   top: 15px;
@@ -113,19 +110,15 @@ nav {
   justify-content: space-between;
   max-width: 1240px;
   margin: 0 auto;
-
 }
 /* wrapper with floating nav effects */
 
-.nav-wrap{
+.nav-wrap {
   max-width: 1280px;
   margin: 0 auto;
   margin-top: 15px;
   border-radius: 100px;
   box-shadow: 0px 15px 20px rgba(173, 216, 230, 0.171);
-
-  
-  
 }
 .nav-wrapers {
   display: flex;
@@ -210,7 +203,6 @@ nav {
   padding-bottom: 50px;
 }
 
-
 .body-text0 {
   margin-right: 10%;
   padding-bottom: 50px;
@@ -222,10 +214,9 @@ nav {
   /* box-sizing: unset; */
   position: relative;
   background-image: url(../images/phone.png);
-  background-repeat:no-repeat;
-  background-size:contain;
+  background-repeat: no-repeat;
+  background-size: contain;
   background-position: center;
-
 
   /* top: 80px;
   right: 250px;
@@ -239,8 +230,8 @@ nav {
   /* height: 5vh; */
   width: clamp(2vw, 0.5vw + 8vw, 10vw);
   object-fit: contain;
-  filter: brightness(0) saturate(100%) invert(14%) sepia(45%) saturate(2435%) hue-rotate(192deg) brightness(94%) contrast(97%) opacity(40%);
-  
+  filter: brightness(0) saturate(100%) invert(14%) sepia(45%) saturate(2435%)
+    hue-rotate(192deg) brightness(94%) contrast(97%) opacity(40%);
 }
 .sponcer-section img:hover {
   filter: none;
@@ -253,17 +244,12 @@ nav {
   align-items: center;
   border-top: 1px solid var(--shades-90);
   border-bottom: 1px solid var(--shades-90);
-  
 }
-
 
 /* ---------------SECTION 1 ---------------- */
 .sec-1 {
   text-align: center;
 }
-
-
-
 
 .body-text1 {
   margin: 0px 20%;
@@ -339,7 +325,7 @@ nav {
 }
 
 .sec-3-3 {
-  flex:1
+  flex: 1;
 }
 .sec-3 h2,
 .sec-3 p,
@@ -426,8 +412,6 @@ h4 {
   align-items: center;
 }
 
-
-
 .sec-5-1 {
   flex: 1;
   margin: 5vh 10vh;
@@ -435,9 +419,9 @@ h4 {
 
 .sec-5-2 {
   flex: 1;
-  height: clamp(100px, 100px + 130vh, 500px );
+  height: clamp(100px, 100px + 130vh, 500px);
   background-color: #e7e7e71e;
- 
+  background-image: url(../images/phone_mockup.png);
 }
 .sec-5-1 h2 {
   color: white;
@@ -446,7 +430,6 @@ h4 {
 .sec-5-1 p {
   color: #dfdfdf;
 }
-
 
 .sec-5-1 p {
   padding-bottom: 10%;
@@ -545,19 +528,15 @@ footer h4 {
   justify-content: space-evenly;
 }
 
-
 /* Responsiveness */
 
-
 @media (max-width: 1024px) {
-
   .header-sec {
     display: block;
   }
 
   .sec-1-img {
     display: block;
-
   }
   .sec-1-imgs-1 {
     margin-right: unset;
@@ -565,38 +544,30 @@ footer h4 {
   }
   .sec-2-cont {
     display: block;
-  
   }
-   .sec-2-img {
+  .sec-2-img {
     display: block;
-   }
-   .sec-3 {
+  }
+  .sec-3 {
     flex-direction: column-reverse;
-   }
-   .sec-3-1 {
+  }
+  .sec-3-1 {
     display: inline-block;
-   }
-   .sec-4{
-display: block;
-   }
-   .sec-5-2{
-    display: none;
-   }
-   .ftr-1 {
+  }
+  .sec-4 {
     display: block;
-    
-   }
-   .f-2{
+  }
+  .sec-5-2 {
+    display: none;
+  }
+  .ftr-1 {
+    display: block;
+  }
+  .f-2 {
     margin-right: 0;
     margin-bottom: 50px;
-   }
-  
+  }
 }
 
-
-
 @media (min-width: 480px) {
-
-
-
 }
