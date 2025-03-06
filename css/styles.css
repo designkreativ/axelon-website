@@ -252,7 +252,7 @@ nav {
 }
 
 .body-text1 {
-  margin: 0px 20%;
+  margin: 0px 10%;
   padding-bottom: 50px;
 }
 
@@ -263,7 +263,7 @@ nav {
 
 .sec-1-imgs-1,
 .sec-1-imgs-2 {
-  height: 60vh;
+  height: 50vh;
   border-radius: 10px;
   background-color: #e7e7e7;
 }
@@ -288,10 +288,8 @@ nav {
   justify-content: space-between;
 }
 
-.sec-2-img-1,
-.sec-2-img-2,
-.sec-2-img-3 {
-  height: 60vh;
+.sec-2-img div {
+  height: 40vw;
   /* width: 32.8%; */
   flex: 1;
   gap: 10px;
@@ -302,7 +300,13 @@ nav {
 
 /* --------------- SECTION 3 ---------- */
 .sec-3-bg {
+  background-image: url(../images/bg_pattern3.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: var(--primary-10);
+  background-blend-mode: overlay;
+
   padding: 5vh 0px;
   /* height: 40vh; */
   width: 100%;
@@ -404,9 +408,15 @@ h4 {
   font-weight: 400;
 }
 
-/* ------------ SECTION 5 --------- */
+/* ------------ SECTION 5   Call To action --------- */
 .sec-5 {
+  background-image: url(../images/bg_pattern3.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: var(--primary-10);
+  background-blend-mode: overlay;
+
   /* height: 500px; */
   display: flex;
   align-items: center;
@@ -414,14 +424,16 @@ h4 {
 
 .sec-5-1 {
   flex: 1;
-  margin: 5vh 10vh;
+  margin: 4vw 5vw;
 }
 
 .sec-5-2 {
   flex: 1;
-  height: clamp(100px, 100px + 130vh, 500px);
-  background-color: #e7e7e71e;
+  height: clamp(50px, 80px + 130vh, 500px);
   background-image: url(../images/phone_mockup.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: 100px;
 }
 .sec-5-1 h2 {
   color: white;
@@ -429,10 +441,7 @@ h4 {
 
 .sec-5-1 p {
   color: #dfdfdf;
-}
-
-.sec-5-1 p {
-  padding-bottom: 10%;
+  padding-bottom: 4vw;
 }
 
 /* ----------------- FOOTER ----------------- */
@@ -446,7 +455,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 5vh;
+  gap: 10vh;
 }
 
 footer a,
@@ -467,6 +476,7 @@ footer h4 {
 .ftr-list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .ftr-list h4 {
@@ -475,6 +485,7 @@ footer h4 {
 }
 .ftr-list li {
   padding-bottom: 15px;
+  padding-right: clamp(10px, 10px + 2vw, 2vw);
 }
 .ftr-list a {
   font-size: 0.9rem;
@@ -493,6 +504,10 @@ footer h4 {
   font-size: 0.9rem;
   line-height: 1.5;
   padding-bottom: 3vh;
+}
+.f-2 form {
+  /* width: 400px; */
+  width: clamp(200px, 100 + 100vw, 300px);
 }
 
 .footer-inputs {
@@ -542,6 +557,9 @@ footer h4 {
     margin-right: unset;
     margin-bottom: 10px;
   }
+  .sec-2-img div {
+    height: 50vw;
+  }
   .sec-2-cont {
     display: block;
   }
@@ -557,9 +575,28 @@ footer h4 {
   .sec-4 {
     display: block;
   }
-  .sec-5-2 {
-    display: none;
+
+  /* SECTION 5 | Call To action */
+
+  .sec-5 {
+    width: unset;
+    display: block;
   }
+  .sec-5-1 {
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .sec-5-2 {
+    background-position: center;
+    background-position-y: 100px;
+  }
+
+  .body-text {
+    font-size: clamp(0.4rem, 0.6rem + 0.8vw, 1rem);
+  }
+
+  /* FOOTER */
+
   .ftr-1 {
     display: block;
   }
@@ -569,5 +606,9 @@ footer h4 {
   }
 }
 
-@media (min-width: 480px) {
+@media (max-width: 480px) {
+  /* Footer */
+  .ftr-list li {
+    padding-right: 40px;
+  }
 }
