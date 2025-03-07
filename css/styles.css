@@ -607,6 +607,11 @@ footer h4 {
 }
 
 @media (max-width: 480px) {
+
+  /* SPONCER SECTION  */
+  .sponcer-section {
+    display: block;
+  }
   /* Footer */
   .ftr-list li {
     padding-right: 40px;
