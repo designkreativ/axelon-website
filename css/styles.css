@@ -228,7 +228,7 @@ nav {
 
 .sponcer-section img {
   /* height: 5vh; */
-  width: clamp(2vw, 0.5vw + 8vw, 10vw);
+  width: clamp(10px, 10px + 10vw, 150px);
   object-fit: contain;
   filter: brightness(0) saturate(100%) invert(14%) sepia(45%) saturate(2435%)
     hue-rotate(192deg) brightness(94%) contrast(97%) opacity(40%);
@@ -549,6 +549,10 @@ footer h4 {
   .header-sec {
     display: block;
   }
+  /* Sponcer section */
+  .sponcer-section img {
+    width:  clamp(10px, 20px + 9vw, 150px);
+  }
 
   .sec-1-img {
     display: block;
@@ -604,16 +608,38 @@ footer h4 {
     margin-right: 0;
     margin-bottom: 50px;
   }
+  .ftr-list li {
+    padding-right: 50px;
+  }
+  .ftr-2 {
+    /* display: flex; */
+    flex-direction: column-reverse;
+     /* align-items: center; */
+     gap: 20px;
 }
+}
+  
+
 
 @media (max-width: 480px) {
 
   /* SPONCER SECTION  */
   .sponcer-section {
-    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+  }
+  .sponcer-section div:last-child {
+    display: none;
+  }
+  
+  .sponcer-section img {
+    width:  clamp(50px, 50px + 10vw, 200px);
+
   }
   /* Footer */
   .ftr-list li {
-    padding-right: 40px;
+    padding-right: 80px;
   }
 }
