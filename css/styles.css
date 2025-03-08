@@ -278,6 +278,7 @@ nav {
 .sec-2-cont {
   display: flex;
   align-items: center;
+  gap: 25px;
 }
 
 .sec-2-img {
