@@ -630,8 +630,8 @@ footer h4 {
 }
 
 @media (max-width: 480px) {
-  .header-info {
-  }
+  /* .header-info {
+  } */
 
   /* SPONCER SECTION  */
   .sponcer-section {
